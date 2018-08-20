@@ -25,10 +25,10 @@
             }
         },
         methods:{
+            //onlick event in main screen
             enterChat(){
-                //message when user don't writed name
                 if(this.name){
-                    
+                    this.$router.push({name:'chat'})
                 }else{
                     this.feedback = 'You must enter a name to join'
                 }

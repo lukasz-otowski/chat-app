@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import welcome from '@/components/welcome'
+import chat from '@/components/chat'
 
 Vue.use(Router)
 
@@ -10,6 +11,11 @@ export default new Router({
       path: '/',
       name: 'welcome',
       component: welcome
+    },
+    {
+        path:'/chat',
+        name:'chat',
+        component:chat
     }
   ]
 })
