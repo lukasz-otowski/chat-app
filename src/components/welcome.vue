@@ -28,7 +28,8 @@
             //onlick event in main screen
             enterChat(){
                 if(this.name){
-                    this.$router.push({name:'chat'})
+                    //send values via router
+                    this.$router.push({name:'chat', params:{name: this.name} })
                 }else{
                     this.feedback = 'You must enter a name to join'
                 }
