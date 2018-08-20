@@ -12,8 +12,9 @@ export default {
 
 <style>
     body {
-        background: url(/static/img/brain-bg.a46fac2.jpg);
+        background: url(../src/assets/brain-bg.jpg);
         background-size: cover;
+        color:#8cc;
     }
     .welcome .card{
         border: 3px solid #124770;
