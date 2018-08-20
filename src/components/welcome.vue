@@ -6,6 +6,8 @@
             <form @submit.prevent="enterChat">
                 <label for="name">Enter your name:</label>
                 <input type="text" name="name" v-model="name">
+                <!--show message only when 'feedback' is true-->
+                <p v-if="feedback" class="red-text">{{feedback}}</p>
                 <button class="btn teal">Enter chat</button>
             </form>
         </div>
@@ -18,12 +20,18 @@
         name: 'Welcome',
         data() {
             return {
-                name:null
+                name:null,
+                feedback:null
             }
         },
         methods:{
             enterChat(){
-                console.log(this.name)
+                //message when user don't writed name
+                if(this.name){
+                    
+                }else{
+                    this.feedback = 'You must enter a name to join'
+                }
             }
         }
     }
@@ -33,7 +41,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
     .welcome{
-        max-width: 400px;
+        max-width: 600px;
         margin-top: 100px;
     }
     .welcome h2{
