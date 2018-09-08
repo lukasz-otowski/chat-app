@@ -1,7 +1,6 @@
 # brain-chat
 
-> A Vue.js and firebase chat-app project 
-> In progress
+> A Vue.js and firebase chat-app project
 
 link to hosted app
 
