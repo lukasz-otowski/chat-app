@@ -3,6 +3,10 @@
 > A Vue.js and firebase chat-app project 
 > In progress
 
+link to hosted app
+
+[https://brain-chat-3431f.firebaseapp.com/](https://brain-chat-3431f.firebaseapp.com/) <br>
+
 ## Build Setup
 
 ``` bash
