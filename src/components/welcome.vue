@@ -10,6 +10,23 @@
                 <p v-if="feedback" class="red-text">{{feedback}}</p>
                 <button class="btn teal">Enter chat</button>
             </form>
+            <div class="container logo-choice z-depth-5">
+                <h3>Choice logo</h3>
+                <ul class="row">
+                    <li class="col push-s2 s2 logo">
+                        <img class="circle responsive-img" width="64" src="../assets/chat-logo-1.jpg" alt="logo">
+                    </li>
+                    <li class="col push-s2 s2 logo">
+                        <img class="circle responsive-img" width="64" src="../assets/chat-logo-2.jpg" alt="logo">
+                    </li>
+                    <li class="col push-s2 s2 logo">
+                        <img class="circle responsive-img" width="64" src="../assets/chat-logo-3.jpg" alt="logo">
+                    </li>
+                    <li class="col push-s2 s2 logo">
+                        <img class="circle responsive-img" width="64" src="../assets/chat-logo-4.jpg" alt="logo">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
   </div>
@@ -50,5 +67,21 @@
     }
     .welcome button{
         margin: 30px auto;
+    }/*
+    .welcome .logo-choice .logo:nth-child(odd){
+        text-align: right;
+    }
+    .welcome .logo-choice .logo:nth-child(even){
+        text-align: left;
+    }*/
+    .welcome .logo-choice {
+        width:80%;
+/*        border: 3px solid #124770;*/
+        background-color: #00142c;
+        border-radius: 20px 20px 50% 50% / 20px 20px 35% 35%;
+        padding-bottom: 20px;
+    }
+    .welcome .logo-choice .logo:hover {
+        cursor: pointer
     }
 </style>
